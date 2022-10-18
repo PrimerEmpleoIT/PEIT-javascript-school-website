@@ -1,0 +1,21 @@
+:root {
+  --letra: "Poppins", sans-serif;
+  --h1Tamaño: 4.5rem;
+  --h1LineHeight: 5.813rem;
+  --h2Tamaño: 3rem;
+  --h2LineHeight: 4.5rem;
+  --h3Tamaño: 2.25rem;
+  --h3LineHeigth: 3.375rem;
+  --pTamaño: 1.125rem;
+  --pLineHeigth: 2.063rem;
+
+  --azulMedio: #0295a9;
+  --azulClaro: #21c1d7;
+  --rojo: #e74c3c;
+  --amarillo: #ffbb12;
+  --verde: #10c700;
+}
+
+html {
+  font-family: var(--letra);
+}
