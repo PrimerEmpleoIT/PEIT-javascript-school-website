@@ -29,8 +29,23 @@ html {
 
 body {
   font-family: var(--letra);
+  margin:0;
 }
 
+
+button{
+  padding:10px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:all 0.3s ease 0;
+}
+button:hover{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/*seccion conra no tocar*/
 h1,
 h2,
 h3,
