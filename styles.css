@@ -60,12 +60,15 @@ p {
   align-items: center;
   margin-top: 30px;
   gap: 70px;
+  margin-bottom: 70px;
 }
 
 .text-hero {
   display: flex;
+
   flex-direction: column;
   width: 488px;
+  height: 480px;
 }
 
 .text-hero h1 {
@@ -113,7 +116,7 @@ p {
   flex-wrap: wrap;
   gap: 10px;
   width: 488px;
-  height: 600px;
+  height: 480px;
 }
 
 .item {
@@ -121,33 +124,33 @@ p {
 }
 
 .c-1 {
-  background: url(./img/imagen1grid.png);
+  background: url(./img/imagen1.svg);
   width: 214px;
-  height: 173px;
+  height: 220px;
 }
 
 .c-2 {
-  background: url(./img/imagen2grid.png);
-  width: 230px;
-  height: 225px;
+  background: url(./img/imagen2.svg);
+  width: 214px;
+  height: 220px;
 }
 
 .c-3 {
-  background: url(./img/imagen3grid.png);
-  width: 219px;
-  height: 240px;
+  background: url(./img/imagen3.svg);
+  width: 214px;
+  height: 220px;
 }
 
 .c-4 {
-  background: url(./img/imagen4grid.png);
-  width: 216px;
-  height: 214px;
+  background: url(./img/imagen4.svg);
+  width: 214px;
+  height: 220px;
 }
 
 .c-5 {
   background: var(--amarillo);
-  width: 254px;
-  height: 292px;
+  width: 220px;
+  height: 282px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -255,114 +258,33 @@ p {
   .btn-2 {
     padding: 10px 30px;
   }
+
+  .img-hero {
+    height: 370px;
+  }
+  .c-1 {
+    width: 180px;
+    height: 170px;
+  }
+
+  .c-2 {
+    width: 180px;
+    height: 170px;
+  }
+
+  .c-3 {
+    width: 180px;
+    height: 180px;
+  }
+
+  .c-4 {
+    width: 180px;
+    height: 180px;
+  }
 }
 /* termina hero */
-/* seccion conrado */
-#about-us {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#kids-imgs {
-  height: 80%;
-  margin: 10rem 3rem;
-}
-
-#kids-imgs #thumbs-up {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 1rem;
-}
-
-#service-explanation {
-  height: 80%;
-  width: 50%;
-  margin: 10rem 3rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#service-explanation div {
-  height: 25%;
-  width: 100%;
-}
-
-#service-explanation div#service-title {
-  flex-grow: 1;
-}
-
-#service-explanation div#service-title h2 {
-  font-size: var(--h2Tamaño);
-  line-height: var(--h2LineHeight);
-  letter-spacing: 0.01rem;
-  font-weight: 400;
-
-  background: radial-gradient(
-    circle,
-    rgba(2, 149, 169, 1) 50%,
-    rgba(69, 131, 218, 1) 100%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-#service-explanation div#service-info p {
-  font-size: var(--pTamaño);
-  line-height: var(--pLineHeigth);
-  color: var(--letraGris);
-}
-
-#service-explanation div#about-us_contact {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#service-explanation div#about-us_contact a {
-  height: 100%;
-  width: 50%;
-  cursor: default;
-  padding: 1rem 0.1rem;
-}
-
-#service-explanation div#about-us_contact a button {
-  background: #000000;
-  border-radius: 2rem;
-  box-shadow: var(--textShadow);
-  color: #ffffff;
-  display: inline-block;
-  text-align: center;
-  font-family: var(--letra);
-  font-size: var(--pTamaño);
-  cursor: pointer;
-  padding: 0.6rem 3rem;
-}
-
-#service-explanation div#about-us_contact p {
-  width: 50%;
-  height: 100%;
-  padding: 1.5rem 0;
-  color: var(--letraNegra);
-  font-size: var(--pTamaño);
-  line-height: var(--pLineHeigth);
-}
-
-#service-explanation div#about-us_contact p span {
-  color: var(--letraRoja);
-}
 
 /* section informacion */
-
-.info-section {
-}
-
 .info-p {
   display: flex;
   flex-direction: row;
@@ -460,20 +382,22 @@ p {
 @media (max-width: 800px) {
   .info-p {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
   .info-title {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .info-p {
     text-align: center;
+    margin-bottom: 40px;
   }
 
   .container-estadisticas {
     flex-direction: column;
     height: auto;
-    gap: 30px;
+    gap: 40px;
   }
 }
