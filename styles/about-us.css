@@ -196,8 +196,6 @@
     max-width: 100%;
     order: -1;
   }
-  #service-explanation div#about-us_contact a {
-  }
   #service-explanation div#about-us_contact a button {
     font-size: calc(var(--pTamaño) * 0.5);
   }
