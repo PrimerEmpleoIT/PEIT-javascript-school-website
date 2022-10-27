@@ -60,13 +60,13 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
-#container{
+.header-list{
   color:#000;
   width: 25%;
 }
 
 /*Similar header*/
-.list{
+.header-list > ul{
   display: flex;
   width: auto;
   justify-content: space-around;
@@ -100,7 +100,6 @@ button:hover{
   background-color: rgba(2, 199, 189, 0.8);
 
 }
-
 /*seccion conra no tocar*/
 h1,
 h2,
@@ -210,6 +209,81 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/*SECTION OUR SMARTY PROGRAM*/
+
+.smarty-program{
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    height: 70%;
+}
+
+.smarty-program h3 {
+  padding-bottom: 30px; /*CAMBIAR A REM*/
+  background: radial-gradient(
+  circle,
+  rgba(2, 149, 169, 1) 50%,
+  rgba(69, 131, 218, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+    
+  }
+
+.smarty-program button {
+  background-color: #E74C3C;
+  border: none;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(var(--pTamaño)*1.1);
+  border-radius:50px; /*CAMBIAR A REM*/
+  font-weight: 400;
+  border-bottom: 10px; /*CAMBIAR A REM*/
+  padding: 1rem 2.1rem ; /*CAMBIAR A REM*/
+  box-shadow: var(--boxShadow);
+}
+
+.smarty-program__contenedor-imagenes{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  margin-top: 50px; /*CAMBIAR A REM*/
+  
+  column-gap: 2rem;
+}
+
+.container__elemento {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.elemento__imagen {
+  box-shadow: var(--boxShadow);
+  border-radius: 50px; /*CAMBIAR A REM*/
+  height: 25rem;
+  width: 25rem;
+}
+
+
+.elemento__texto {
+  color: var(--letraNegra);
+  font-weight: bold;
+  font-size: calc(var(--pTamaño)*1.3);
+}
+
 
 /*SECTION ABOUT US*/
 
