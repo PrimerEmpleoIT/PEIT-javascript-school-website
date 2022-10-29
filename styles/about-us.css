@@ -88,6 +88,7 @@
   font-size: var(--pTamaño);
   cursor: pointer;
   padding: 0.6rem 3rem;
+  margin-right: 0;
 }
 
 #service-explanation div#about-us_contact p {
@@ -167,6 +168,11 @@
   body {
     background-color: yellow;
   }
+
+  #about-us {
+    height: 80vh;
+  }
+
   #kids-imgs {
     max-width: 60%;
     width: 50%;
@@ -207,6 +213,7 @@
   }
 
   #about-us {
+    height: 100%;
     flex-direction: column;
     padding: 2rem 0;
     justify-content: flex-start;
