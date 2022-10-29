@@ -12,14 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
-  
-  <!--Seccion Ari-->
+    <!--SECTION HEADER-->
   <!--dividir en 2 divs la list y la kidspark del boton-->
-    <!--Seccion Ari-->    
+    <!--Seccion Ari-->  
     <div class="header-container">
       <div class="header-list">
         <ul>
@@ -37,7 +36,7 @@
     </div>
 
     <!--SECTION OUR CORE VALUES-->
-    
+
     <div class="values">
       <div class="values__box">
         <h3>Our core values</h3>
@@ -114,6 +113,7 @@
   </div>
 
     <!--SECTION ABOUT US-->
+
     <div id="about-us">
       <div id="kids-imgs">
         <img
@@ -142,6 +142,189 @@
           <a href=""><button>About Us</button></a>
           <p><span id="call-us">Call us :</span> +9112345 67890</p>
         </div>
+      </div>
+    </div>
+
+    <!--SECTION FORM-->
+    <div id="form">
+      <div class="form__box form__box--info">
+        <div class="info__box">
+          <h3>
+            Lets talk with <br />
+            our awesome <br />
+            team
+          </h3>
+        </div>
+        <div class="info__box info__box--small">
+          <p>
+            We offer high quality Daycare Services for your <br />
+            kids, contact us or visit us today for more <br />
+            information
+          </p>
+        </div>
+        <div class="info__box info__box--big">
+          <div class="contact-elements">
+            <div class="contact-elements__img">
+              <img
+                src="/img/contact-elements-telefono.svg"
+                alt="icono-telefono"
+              />
+            </div>
+            <div class="contact-elements__info">
+              <h3>Call</h3>
+              <p>+91123567890</p>
+            </div>
+          </div>
+          <div class="contact-elements">
+            <div class="contact-elements__img">
+              <img src="/img/contact-elements-mail.svg" alt="icono-mail" />
+            </div>
+            <div class="contact-elements__info">
+              <h3>Email</h3>
+              <p>abcd123@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-elements">
+            <div class="contact-elements__img">
+              <img src="/img/contact-elements-mapa.svg" alt="icono-mapa" />
+            </div>
+            <div class="contact-elements__info">
+              <h3>Location</h3>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form__box form__box--form">
+        <form action="" id="contact-form">
+          <div class="form-label">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              class="input-field"
+              id="name"
+              placeholder="Your Name Here"
+              required
+            />
+          </div>
+          <div class="form-label">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              name="email"
+              class="input-field"
+              id="email"
+              placeholder="Your Email Here"
+              required
+            />
+          </div>
+          <div class="form-label">
+            <label for="message">Your Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="6"
+              placeholder="Your Message Here"
+              autocomplete="off"
+              form="contact-form"
+              required
+            ></textarea>
+          </div>
+          <div class="form-example">
+            <input type="submit" value="Send Message" id="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--SECTION FORM-CELULARES-->
+    <div id="form--celulares">
+      <div class="form__box--celulares form__box--info">
+        <div class="info__box--celulares">
+          <h3>Lets talk with our awesome team</h3>
+        </div>
+        <div class="info__box--celulares info__box--celulares--small">
+          <p>
+            We offer high quality Daycare Services for your kids, <br />
+            contact us or visit us today for more information
+          </p>
+        </div>
+        <div class="info__box--celulares info__box--celulares--big">
+          <div class="contact-elements--celulares">
+            <div class="contact-elements__img--celulares">
+              <img
+                src="/img/contact-elements-telefono.svg"
+                alt="icono-telefono"
+              />
+            </div>
+            <div class="contact-elements__info--celulares">
+              <h3>Call</h3>
+              <p>+91123567890</p>
+            </div>
+          </div>
+          <div class="contact-elements--celulares">
+            <div class="contact-elements__img--celulares">
+              <img src="/img/contact-elements-mapa.svg" alt="icono-mapa" />
+            </div>
+            <div class="contact-elements__info--celulares">
+              <h3>Location</h3>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
+          <div class="contact-elements--celulares">
+            <div class="contact-elements__img--celulares">
+              <img src="/img/contact-elements-mail.svg" alt="icono-mail" />
+            </div>
+            <div class="contact-elements__info--celulares">
+              <h3>Email</h3>
+              <p>abcd123@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form__box--celulares form__box--celulares--form">
+        <form action="" id="contact-form">
+          <div class="form__label--celulares">
+            <!-- <label for="name">Your Name</label> -->
+            <input
+              type="text"
+              name="name"
+              class="input-field"
+              id="name"
+              placeholder="Your Name Here"
+              required
+            />
+          </div>
+          <div class="form__label--celulares">
+            <!-- <label for="email">Your Email</label> -->
+            <input
+              type="email"
+              name="email"
+              class="input-field"
+              id="email"
+              placeholder="Your Email Here"
+              required
+            />
+          </div>
+          <div class="form__label--celulares">
+            <!-- <label for="message">Your Message</label> -->
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="6"
+              placeholder="Your Message Here"
+              autocomplete="off"
+              form="contact-form"
+              required
+            ></textarea>
+          </div>
+          <div class="form__button--celulares">
+            <input type="submit" value="Send Message" id="submit--celulares" />
+          </div>
+        </form>
       </div>
     </div>
   </body>
