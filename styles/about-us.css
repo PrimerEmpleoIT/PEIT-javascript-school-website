@@ -1,5 +1,4 @@
-/*SECTION ABOUT US*/
-
+/*ESTILOS DE ESCRITORIO*/
 #about-us {
   width: 100vw;
   max-width: 100%;
@@ -111,6 +110,10 @@
   body {
     background-color: #10c700;
   }
+
+  #about-us {
+    padding-bottom: 0;
+  }
   #kids-imgs {
     max-width: 60%;
     width: 50%;
@@ -137,6 +140,9 @@
 @media screen and (min-width: 769px) and (max-width: 888px) {
   body {
     background-color: red;
+  }
+  #about-us {
+    padding-bottom: 0;
   }
   #kids-imgs {
     max-width: 60%;
@@ -173,6 +179,7 @@
 
   #about-us {
     height: 80vh;
+    padding-bottom: 0;
   }
 
   #kids-imgs {

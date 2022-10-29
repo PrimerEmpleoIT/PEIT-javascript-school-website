@@ -24,6 +24,7 @@
 }
 
 .smarty-program button {
+  cursor: pointer;
   background-color: #e74c3c;
   border: none;
   margin: 0;
