@@ -313,6 +313,7 @@
   #form--celulares {
     display: flex;
     align-items: center;
+    padding: 0 3rem;
   }
 
   .info__box--celulares h3 {
