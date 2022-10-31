@@ -1,0 +1,119 @@
+/* section informacion */
+.info-p {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-title {
+  display: flex;
+  flex-direction: column;
+  color: var(--letraNegra);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  /* width: 495px; */
+}
+
+.info-text {
+  display: flex;
+
+  color: var(--letraGris);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  width: 35%;
+}
+
+.container-estadisticas {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.estadisticas {
+  display: flex;
+  width: 200px;
+  gap: 25px;
+}
+
+.fa-calendar-days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #4583da;
+}
+
+.estadisticas-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.estadisticas-results span {
+  color: var(--verde);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.estadisticas-results p {
+  color: #323232;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.fa-medal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #ffa800;
+}
+.fa-child-dress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #f160e3;
+}
+
+.fa-comment-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: var(--letraRoja);
+}
+
+@media (max-width: 800px) {
+  .info-p {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .info-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .info-p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .container-estadisticas {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+}
