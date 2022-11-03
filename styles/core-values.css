@@ -156,7 +156,7 @@
 @media screen and (max-width: 600px) {
   .values {
     padding: 0 3rem;
-    height: 50vh;
+    margin: 2rem 0;
   }
 
   .values__box__h3 {
@@ -165,29 +165,31 @@
   }
 
   .values__box--main {
+    flex-direction: column;
     flex-basis: content;
-    justify-content: space-between;
     padding: 0;
+    row-gap: 2rem;
   }
   .values__box__text {
     display: none;
   }
 
   .values__box__text--celulares {
-    font-size: calc(var(--pTamaño) * 0.7);
+    font-size: calc(var(--pTamaño) * 0.6);
+    line-height: calc(var(--pLineHeigth) * 0.6);
     display: contents;
   }
 
   .values__enumeracion {
-    width: 30%;
-    height: 50%;
+    width: 65%;
+    height: 2rem;
   }
   .values__enumeracion__texto {
     display: none;
   }
   .values__enumeracion__texto--celulares {
     display: contents;
-    font-size: calc(var(--pTamaño) * 0.4);
+    font-size: calc(var(--pTamaño) * 0.5);
     line-height: calc(var(--pLineHeigth) * 0.4);
   }
   .check-symbol {
