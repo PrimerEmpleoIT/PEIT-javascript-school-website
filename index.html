@@ -9,8 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <title>School Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
@@ -22,6 +22,7 @@
   <body>
     <!--SECTION HEADER-->
     <!--dividir en 2 divs la list y la kidspark del boton-->
+
     <div id="header-container" class="header-container">
       <div class="header-list">
         <ul>
@@ -33,12 +34,15 @@
         <!-- <button class="contact-button button-header1">Contact Us</button> -->
       </div>
       <div class="img-container">
-        <img src="./img/logo.svg" alt="kidslogo" />
-        <button class="contact-button button-header2">Contact Us</button>
+        <img src="/img/logo.svg" alt="kidslogo" />
+        <button type="button" class="contact-button button-header2">
+          Contact Us
+        </button>
       </div>
     </div>
 
     <!--SECTION DE HERO-->
+
     <div id="container-hero" class="container-hero">
       <div class="text-hero">
         <h1>A brighter</h1>
@@ -49,8 +53,8 @@
           visit us today for more information
         </p>
         <div class="text-btn">
-          <button class="btn-1">Get started</button>
-          <button class="btn-2">Why us?</button>
+          <button type="button" class="btn-1">Get started</button>
+          <button type="button" class="btn-2">Why us?</button>
         </div>
       </div>
       <div class="img-hero">
@@ -62,7 +66,7 @@
           <i class="fa-solid fa-user"></i>
           <span class="c-5Number">3468</span>
           <p class="c-5p">Total students</p>
-          <button class="c-5Btn">Get started</button>
+          <button type="button" class="c-5Btn">Get started</button>
         </div>
       </div>
     </div>
@@ -140,12 +144,12 @@
 
     <div id="smarty-program" class="smarty-program">
       <h3>Our Smarty Program</h3>
-      <button>Get Started</button>
+      <button type="button">Get Started</button>
       <div class="smarty-program__contenedor-imagenes">
         <div class="container__elemento">
           <img
             class="elemento__imagen"
-            src="img/first-img.svg"
+            src="/img/first-img.svg"
             alt="1st child-img"
           />
           <p class="elemento__texto">Preschool (2 - 3 years)</p>
@@ -153,7 +157,7 @@
         <div class="container__elemento">
           <img
             class="elemento__imagen"
-            src="img/second-img.svg"
+            src="/img/second-img.svg"
             alt="2nd child-img"
           />
           <p class="elemento__texto">Kindergarten (3 - 5 years)</p>
@@ -161,7 +165,7 @@
         <div class="container__elemento">
           <img
             class="elemento__imagen"
-            src="img/third-img.svg"
+            src="/img/third-img.svg"
             alt="3rd child-img"
           />
           <p class="elemento__texto">Pre-K For All (6 years)</p>
@@ -171,7 +175,6 @@
 
     <!--SECTION INFORMACION-->
 
-    <!-- seccion de informacion seba -->
     <div id="info-p" class="info-p">
       <div class="info-title">
         <h3>A Brighter Future For</h3>
@@ -246,7 +249,7 @@
           </p>
         </div>
         <div id="about-us_contact">
-          <a href=""><button>About Us</button></a>
+          <a href=""><button type="button">About Us</button></a>
           <p><span id="call-us">Call us :</span> +9112345 67890</p>
         </div>
       </div>
@@ -303,7 +306,7 @@
         </div>
       </div>
       <div class="form__box form__box--form">
-        <form action="" id="contact-form">
+        <form action="#" id="contact-form" autocomplete="off">
           <div class="form-label">
             <label for="name">Your Name</label>
             <input
@@ -312,7 +315,7 @@
               class="input-field"
               id="name"
               placeholder="Your Name Here"
-              required
+              autocomplete="off"
             />
           </div>
           <div class="form-label">
@@ -323,7 +326,7 @@
               class="input-field"
               id="email"
               placeholder="Your Email Here"
-              required
+              autocomplete="off"
             />
           </div>
           <div class="form-label">
@@ -425,7 +428,6 @@
               placeholder="Your Message Here"
               autocomplete="off"
               form="contact-form"
-              required
             ></textarea>
           </div>
           <div class="form__button--celulares">
@@ -434,5 +436,8 @@
         </form>
       </div>
     </div>
+
+    <!--SCRIPTS-->
+    <script src="main.js"></script>
   </body>
 </html>
