@@ -48,6 +48,3 @@
   cursor: pointer;
   transition: all 0.3s ease 0;
 }
-button:hover {
-  background-color: rgba(2, 199, 189, 0.8);
-}
