@@ -107,10 +107,7 @@
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 889px) and (max-width: 1024px) {
-  body {
-    background-color: #10c700;
-  }
-
+ 
   #about-us {
     padding-bottom: 0;
   }
@@ -138,9 +135,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 888px) {
-  body {
-    background-color: red;
-  }
+
   #about-us {
     padding-bottom: 0;
   }
@@ -173,9 +168,6 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  body {
-    background-color: yellow;
-  }
 
   #about-us {
     height: 80vh;
@@ -217,9 +209,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    background-color: aquamarine;
-  }
 
   #about-us {
     height: 100%;

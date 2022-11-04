@@ -2,45 +2,57 @@
 .header-container {
   display: flex;
   height: 5rem;
-  width: 100vw;
+  width: 100%;
   background-color: #0295a9;
   padding: 0 3rem;
   justify-content: space-between;
   max-width: 100%;
   align-items: center;
   border-radius: 10px 10px 0px 0px;
+  margin: 0 auto;
+}
+.menu-toggle{
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
+.fa-bars{
+color: #000;
+width: 2rem;
+height: 2rem;
+display: none;
+}
+
+
 .header-list {
+  display: flex;
   color: #000;
-  width: 35%;
+  justify-content: flex-start;
 }
 
 /*Similar header*/
-.header-list > ul {
-  display: flex;
-  justify-content: space-around;
-  column-gap: 0.5rem;
-}
-.header-list li {
-  font-size: calc(var(--h3Tamaño) * 0.6);
+
+.list-items {
+    display: flex;
+    gap: 40px;
+    font-size: 22px;
+    justify-content: space-between;
 }
 .img-container {
   display: flex;
-  column-gap: 2.2rem;
   align-items: center;
-  justify-content: space-around;
-  padding-bottom: 0.5rem;
-  padding-right: 4rem;
-  width: 55%;
+  justify-content: space-between;
+  gap: 40px;
 }
 .img-container img {
   width: 18rem;
+
 }
 /*Boton seccion*/
 
-.img-container > button {
-  padding: 10px 42px;
+.button-header {
+  padding: 10px 17px;
   font-size: calc(var(--h3Tamaño) * 0.6);
   background-color: #036370;
   border: none;
@@ -48,4 +60,48 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0;
+}
+
+/*Media Header*/
+/**/
+@media (max-width:1000px){
+  .header-container{
+    padding: 5px;
+  }
+  .menu-toggle{
+    display: flex;
+  }
+  .img-container{
+    display: flex;
+    gap: 15px;
+  }
+  .header-list {
+    display: none;
+  }
+  .fa-bars {
+    display: flex;
+    font-size: 2rem;
+  }
+  .button-header {
+    padding: 5px 15px;
+  }
+}
+@media(max-width:690px){
+  .img-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .img-container img {
+    width: 12rem;
+  }
+}
+
+@media(max-width:415px){
+  .button-header{
+    padding: 5px 10px;
+  }
+  .img-container img{
+      width: 8rem;
+  }
 }
