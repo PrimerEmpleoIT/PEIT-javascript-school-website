@@ -117,3 +117,12 @@
     gap: 40px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .info-text {
+    display: flex;
+    color: var(--letraGris);
+    width: 100%;
+    font-size: calc(var(--pTamaño) * 0.8);
+  }
+}

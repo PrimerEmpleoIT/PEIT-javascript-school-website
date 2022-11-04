@@ -43,7 +43,7 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 40px;  
 }
 .img-container img {
   width: 18rem;
@@ -64,7 +64,7 @@ display: none;
 
 /*Media Header*/
 /**/
-@media (max-width:1000px){
+@media (max-width:1100px){
   .header-container{
     padding: 5px;
   }
@@ -97,7 +97,7 @@ display: none;
   }
 }
 
-@media(max-width:415px){
+@media(max-width:470px){
   .button-header{
     padding: 5px 10px;
   }
