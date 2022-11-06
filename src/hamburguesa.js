@@ -1,9 +1,18 @@
 console.log("gsdfds");
 
-const menuHamburguesa = document.querySelector("#hamburguesa");
+const botonHamburguesa = document.querySelector("#hamburguesa");
+const menuHamburguesa = document.querySelector("#header-list--celulares");
 
-function display(event) {
-  console.log("clicked");
+function display() {
+  menuHamburguesa.classList.toggle("active");
 }
 
-menuHamburguesa.addEventListener("click", display);
+function removeClass() {
+  menuHamburguesa.classList.remove("active");
+}
+
+botonHamburguesa.addEventListener("click", display);
+
+document.addEventListener("scroll", removeClass);
+
+console.log("hamburguesa funciona");
