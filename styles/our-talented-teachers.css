@@ -29,18 +29,20 @@
 
 .teachers-container img {
   height: 14rem;
+  width: 14rem;
   box-shadow: var(--boxShadow);
   border-radius: 50%;
 }
 
-.container__elemento {
+.container-teacher__elemento {
+  width: 20%;
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
   text-align: center;
 }
 
-.container__elemento span {
+.container-teacher__elemento span {
   color: var(--letraGris);
   text-shadow: var(--textShadow);
   font-size: 13.3px;

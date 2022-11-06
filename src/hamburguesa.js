@@ -1,5 +1,3 @@
-console.log("gsdfds");
-
 const botonHamburguesa = document.querySelector("#hamburguesa");
 const menuHamburguesa = document.querySelector("#header-list--celulares");
 
