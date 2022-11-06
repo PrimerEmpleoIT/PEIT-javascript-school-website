@@ -31,16 +31,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 100px;
+  height: auto;
   width: 100%;
   margin-top: 20px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
 }
 
 .estadisticas {
   display: flex;
   align-items: center;
   gap: 30px;
-  height: 100px;
+  height: auto;
 }
 
 .fa-calendar-days {
@@ -110,15 +116,19 @@
     margin-bottom: 40px;
   }
 
-  .estadisticas-results {
-    justify-content: center;
-    align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .estadisticas {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .estadisticas-results span {
+    text-align: center;
   }
 
   .container-estadisticas {

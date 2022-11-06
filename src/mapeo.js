@@ -32,12 +32,13 @@ const createEstadisticas = (esta)=>{
     
 
     return `
+    <div class="container">
     <div class="estadisticas">
     <i class="${clas}"></i>
         <div class="estadisticas-results">
-     
           <span>${numero}</span>
           <p>${name}</p>
+        </div>
         </div>`;
 };
 
