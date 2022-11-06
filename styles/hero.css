@@ -10,7 +10,6 @@
 
 .text-hero {
   display: flex;
-
   flex-direction: column;
   width: 488px;
   height: 480px;
@@ -199,6 +198,7 @@
 @media (max-width: 450px) {
   .text-hero {
     width: 350px;
+    height: auto;
   }
   .btn-1 {
     padding: 10px 30px;
