@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <title>School Website</title>
@@ -16,48 +20,30 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/main.css" />
+
+    <script type="module" crossorigin src="/assets/index.47529a74.js"></script>
+    <link rel="stylesheet" href="/assets/index.0c6a522f.css" />
   </head>
   <body>
     <!--SECTION HEADER-->
+    <!--dividir en 2 divs la list y la kidspark del boton-->
+
     <div id="header-container" class="header-container">
       <div class="header-list">
-        <ul class="list-items">
-          <li><a href="#header-container">Home</a></li>
-          <li><a href="#smarty-program">Programs</a></li>
-          <li><a href="#info-p">Why Us</a></li>
-          <li><a href="#about-us">About Us</a></li>
+        <ul>
+          <a href="#header-container"><li>Home</li></a>
+          <a href="#smarty-program"><li>Programs</li></a>
+          <a href="#info-p"><li>Why Us</li></a>
+          <a href="#about-us"><li>About Us</li></a>
         </ul>
+        <!-- <button class="contact-button button-header1">Contact Us</button> -->
       </div>
       <div class="img-container">
-        <img src="./img/logo.svg" alt="kidslogo" />
-        <button type="button" class="button-header">
-          <a href="#form">Contact Us</a>
+        <img src="/assets/logo.4102ff6a.svg" alt="kidslogo" />
+        <button type="button" class="contact-button button-header2">
+          Contact Us
         </button>
       </div>
-    </div>
-
-    <!-- HEADER MENU HAMBURGUESA -->
-
-    <div id="header-container--celulares" class="header-container--celulares">
-      <div class="img-container--celulares">
-        <img src="./img/logo.svg" alt="kidslogo" />
-      </div>
-    </div>
-    <div class="menu-toggle--celulares">
-      <i id="hamburguesa" class="fa-solid fa-bars fa-bars-celulares"></i>
-    </div>
-    <div id="header-list--celulares" class="header-list--celulares">
-      <ul class="list-items--celulares">
-        <li><a href="#header-container">Home</a></li>
-        <li><a href="#smarty-program">Programs</a></li>
-        <li><a href="#info-p">Why Us</a></li>
-        <li><a href="#about-us">About Us</a></li>
-      </ul>
-      <button type="button" class="button-header button-header--celulares">
-        <a href="#form--celulares">Contact Us</a>
-      </button>
     </div>
 
     <!--SECTION DE HERO-->
@@ -112,7 +98,7 @@
           <div class="check-symbol">
             <img
               class="check-symbol_svg"
-              src="/img/check-icon-svg.svg"
+              src="/assets/check-icon-svg.8661f702.svg"
               alt="check-icon-svg"
             />
           </div>
@@ -128,7 +114,7 @@
           <div class="check-symbol">
             <img
               class="check-symbol_svg"
-              src="/img/check-icon-svg.svg"
+              src="/assets/check-icon-svg.8661f702.svg"
               alt="check-icon-svg"
             />
           </div>
@@ -144,7 +130,7 @@
           <div class="check-symbol">
             <img
               class="check-symbol_svg"
-              src="/img/check-icon-svg.svg"
+              src="/assets/check-icon-svg.8661f702.svg"
               alt="check-icon-svg"
             />
           </div>
@@ -168,7 +154,7 @@
         <div class="container__elemento">
           <img
             class="elemento__imagen"
-            src="/img/first-img.svg"
+            src="/assets/first-img.1edbf6d2.svg"
             alt="1st child-img"
           />
           <p class="elemento__texto">Preschool (2 - 3 years)</p>
@@ -176,7 +162,7 @@
         <div class="container__elemento">
           <img
             class="elemento__imagen"
-            src="/img/second-img.svg"
+            src="/assets/second-img.3d38eebb.svg"
             alt="2nd child-img"
           />
           <p class="elemento__texto">Kindergarten (3 - 5 years)</p>
@@ -184,7 +170,7 @@
         <div class="container__elemento">
           <img
             class="elemento__imagen"
-            src="/img/third-img.svg"
+            src="/assets/third-img.0c237a5f.svg"
             alt="3rd child-img"
           />
           <p class="elemento__texto">Pre-K For All (6 years)</p>
@@ -247,7 +233,7 @@
       <div id="kids-imgs">
         <img
           id="thumbs-up"
-          src="/img/niño-pulgares_arriba.svg"
+          src="/assets/niño-pulgares_arriba.4ae1c0ba.svg"
           alt="niño-pulgares_arriba"
           role="img"
         />
@@ -273,32 +259,6 @@
         </div>
       </div>
     </div>
-    <!--SECTION OUR TALENTED TEACHERS-->
-    <div id="teachers-section" class="teachers-section">
-      <h3>Our Talented Teachers</h3>
-      <div class="teachers-container">
-        <div class="container__elemento">
-          <img src="img/1st-teacher.svg" alt="first-img-teachers" />
-          <p>Warso Setyo</p>
-          <span>Headmaster</span>
-        </div>
-        <div class="container__elemento">
-          <img src="img/math-teacher.svg" alt="second-img-teachers" />
-          <p>Retno Hadi</p>
-          <span>Math Teacher</span>
-        </div>
-        <div class="container__elemento">
-          <img src="img/third-teacher.svg" alt="third-img-teachers" />
-          <p>Nursholaha</p>
-          <span>English Teacher</span>
-        </div>
-        <div class="container__elemento">
-          <img src="img/4to-teacher.svg" alt="Fourth-img-teachers" />
-          <p>Zubaidah</p>
-          <span>Art Teacher</span>
-        </div>
-      </div>
-    </div>
 
     <!--SECTION FORM-->
     <div id="form">
@@ -321,7 +281,7 @@
           <div class="contact-elements">
             <div class="contact-elements__img">
               <img
-                src="/img/contact-elements-telefono.svg"
+                src="/assets/contact-elements-telefono.04d7a1f9.svg"
                 alt="icono-telefono"
               />
             </div>
@@ -332,7 +292,10 @@
           </div>
           <div class="contact-elements">
             <div class="contact-elements__img">
-              <img src="/img/contact-elements-mail.svg" alt="icono-mail" />
+              <img
+                src="/assets/contact-elements-mail.11d4b757.svg"
+                alt="icono-mail"
+              />
             </div>
             <div class="contact-elements__info">
               <h3>Email</h3>
@@ -341,7 +304,10 @@
           </div>
           <div class="contact-elements">
             <div class="contact-elements__img">
-              <img src="/img/contact-elements-mapa.svg" alt="icono-mapa" />
+              <img
+                src="/assets/contact-elements-mapa.d3039b5d.svg"
+                alt="icono-mapa"
+              />
             </div>
             <div class="contact-elements__info">
               <h3>Location</h3>
@@ -410,7 +376,7 @@
           <div class="contact-elements--celulares">
             <div class="contact-elements__img--celulares">
               <img
-                src="/img/contact-elements-telefono.svg"
+                src="/assets/contact-elements-telefono.04d7a1f9.svg"
                 alt="icono-telefono"
               />
             </div>
@@ -421,7 +387,10 @@
           </div>
           <div class="contact-elements--celulares">
             <div class="contact-elements__img--celulares">
-              <img src="/img/contact-elements-mapa.svg" alt="icono-mapa" />
+              <img
+                src="/assets/contact-elements-mapa.d3039b5d.svg"
+                alt="icono-mapa"
+              />
             </div>
             <div class="contact-elements__info--celulares">
               <h3>Location</h3>
@@ -430,7 +399,10 @@
           </div>
           <div class="contact-elements--celulares">
             <div class="contact-elements__img--celulares">
-              <img src="/img/contact-elements-mail.svg" alt="icono-mail" />
+              <img
+                src="/assets/contact-elements-mail.11d4b757.svg"
+                alt="icono-mail"
+              />
             </div>
             <div class="contact-elements__info--celulares">
               <h3>Email</h3>
@@ -483,6 +455,5 @@
     </div>
 
     <!--SCRIPTS-->
-    <script type="module" src="main.js"></script>
   </body>
 </html>
