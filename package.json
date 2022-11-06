@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/PrimerEmpleoIT/PEIT-javascript-school-website/issues"
   },
-  "homepage": "https://github.com/PrimerEmpleoIT/PEIT-javascript-school-website#readme"
+  "homepage": "https://github.com/PrimerEmpleoIT/PEIT-javascript-school-website#readme",
+  "dependencies": {
+    "flickity": "^3.0.0"
+  }
 }
