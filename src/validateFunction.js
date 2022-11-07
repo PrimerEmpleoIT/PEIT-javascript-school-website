@@ -1,7 +1,7 @@
 import JustValidate from "just-validate";
 
 const validacionDesktop = new JustValidate("#contact-form");
-console.log("acutalicse");
+console.log("just-validate funciona");
 
 validacionDesktop
   .addField("#name", [
