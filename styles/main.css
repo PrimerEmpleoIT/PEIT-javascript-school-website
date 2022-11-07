@@ -1,0 +1,59 @@
+/*IMPORTS NECESARIOS PARA QUE FUNCIONE CADA COMPONENTE*/
+
+@import url(/styles/globals.css);
+@import url(/styles/header.css);
+@import url(/styles/core-values.css);
+@import url(/styles/about-us.css);
+@import url(/styles/form.css);
+@import url(/styles/smarty-program.css);
+@import url(/styles/hero.css);
+@import url(/styles/informacion.css);
+@import url(our-talented-teachers.css);
+
+* {
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html {
+  overflow-x: hidden;
+  background-color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--letra);
+
+  cursor: default;
+
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  text-shadow: var(--textShadow);
+  color: var(--letraNegra);
+}
+
+h1 {
+  font-size: var(--h1Tamaño);
+  line-height: var(--h1LineHeight);
+}
+
+h2 {
+  font-size: var(--h2Tamaño);
+  line-height: var(--h2LineHeight);
+}
+
+h3 {
+  font-size: var(--h3Tamaño);
+  line-height: var(--h3LineHeigth);
+}
+
+p {
+  font-size: var(--pTamaño);
+  line-height: var(--pLineHeigth);
+}
