@@ -9,6 +9,7 @@
 @import url(/styles/hero.css);
 @import url(/styles/informacion.css);
 @import url(our-talented-teachers.css);
+@import url(footer.css);
 * {
   transition: all 0.2s linear;
   scroll-behavior: smooth;
