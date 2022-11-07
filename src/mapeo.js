@@ -28,13 +28,7 @@ const estadisticas = [
 const createEstadisticas = (esta) => {
   const { name, numero, clas } = esta;
 
-
-
-const createEstadisticas = (esta)=>{
-    const  {name ,numero,clas } = esta;
-    
-
-    return `
+  return `
     <div class="estadisticas">
     <i class="${clas}"></i>
         <div class="estadisticas-results">
