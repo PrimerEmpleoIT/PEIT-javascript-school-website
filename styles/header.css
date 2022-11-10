@@ -8,22 +8,8 @@
   justify-content: space-between;
   max-width: 100%;
   align-items: center;
-  border-radius: 10px 10px 0px 0px;
   margin: 0 auto;
 }
-.menu-toggle{
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa-bars{
-color: #000;
-width: 2rem;
-height: 2rem;
-display: none;
-}
-
 
 .header-list {
   display: flex;
@@ -34,20 +20,19 @@ display: none;
 /*Similar header*/
 
 .list-items {
-    display: flex;
-    gap: 40px;
-    font-size: 22px;
-    justify-content: space-between;
+  display: flex;
+  gap: 40px;
+  font-size: 22px;
+  justify-content: space-between;
 }
 .img-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;  
+  gap: 40px;
 }
 .img-container img {
   width: 18rem;
-
 }
 /*Boton seccion*/
 
@@ -62,16 +47,167 @@ display: none;
   transition: all 0.3s ease 0;
 }
 
-/*Media Header*/
-/**/
-@media (max-width:1100px){
-  .header-container{
-    padding: 5px;
+/*SECCION MENU HAMBURGUESA*/
+.header-container--celulares {
+  display: none;
+  height: 5rem;
+  width: 100%;
+  background-color: #0295a9;
+  padding: 0 3rem;
+  justify-content: center;
+  max-width: 100%;
+  align-items: center;
+
+  margin: 0 auto;
+}
+.menu-toggle--celulares {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle--celulares i {
+  cursor: pointer;
+}
+.img-container--celulares img {
+  width: 18rem;
+}
+.fa-bars {
+  display: flex;
+  font-size: 2rem;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.header-list--celulares {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -110%;
+  background-color: var(--azulMedio);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/*CLASE PARA TRAER EL MENU*/
+.active {
+  display: none;
+  right: 0;
+}
+
+.list-items--celulares {
+  text-align: center;
+}
+.list-items--celulares li {
+  font-size: var(--pTamaño);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 889px) and (max-width: 1024px) {
+  .list-items {
+    font-size: calc(var(--pTamaño) * 0.9);
+    text-align: center;
+    justify-items: center;
   }
-  .menu-toggle{
+  .list-items li {
+    display: flex;
+    align-items: center;
+  }
+  .img-container {
+    gap: 2rem;
+  }
+  .img-container img {
+    width: 15rem;
+  }
+  .button-header {
+    font-size: calc(var(--pTamaño) * 0.9);
+  }
+}
+
+@media screen and (min-width: 834px) and (max-width: 888px) {
+  .list-items {
+    font-size: calc(var(--pTamaño) * 0.8);
+  }
+  .list-items li {
+    display: flex;
+    align-items: center;
+  }
+  .img-container {
+    gap: 1.5rem;
+  }
+  .img-container img {
+    width: 12rem;
+  }
+  .button-header {
+    font-size: calc(var(--pTamaño) * 0.8);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 834px) {
+  .list-items {
+    font-size: calc(var(--pTamaño) * 0.8);
+  }
+  .list-items li {
+    display: flex;
+    align-items: center;
+  }
+  .img-container {
+    gap: 1rem;
+  }
+  .img-container img {
+    width: 10rem;
+  }
+  .button-header {
+    font-size: calc(var(--pTamaño) * 0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container--celulares {
     display: flex;
   }
-  .img-container{
+  .menu-toggle--celulares {
+    display: unset;
+  }
+  .active {
+    display: unset;
+    right: 0;
+  }
+  .header-list--celulares {
+    display: unset;
+  }
+  .header-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-container--celulares img {
+    width: 15rem;
+  }
+}
+
+/* @media (max-width: 1100px) {
+  .header-container {
+    padding: 5px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .img-container {
     display: flex;
     gap: 15px;
   }
@@ -86,8 +222,8 @@ display: none;
     padding: 5px 15px;
   }
 }
-@media(max-width:690px){
-  .img-container{
+@media (max-width: 690px) {
+  .img-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -97,11 +233,11 @@ display: none;
   }
 }
 
-@media(max-width:470px){
-  .button-header{
+@media (max-width: 470px) {
+  .button-header {
     padding: 5px 10px;
   }
-  .img-container img{
-      width: 8rem;
+  .img-container img {
+    width: 8rem;
   }
-}
+} */

@@ -28,20 +28,25 @@
 }
 
 .container-estadisticas {
-  padding: 0 3rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100px;
+  justify-content: space-around;
+  height: auto;
   width: 100%;
   margin-top: 20px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
 }
 
 .estadisticas {
   display: flex;
-  width: 200px;
-  gap: 25px;
+  align-items: center;
+  gap: 30px;
+  height: auto;
 }
 
 .fa-calendar-days {
@@ -109,6 +114,21 @@
   .info-p {
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .estadisticas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .estadisticas-results span {
+    text-align: center;
   }
 
   .container-estadisticas {
