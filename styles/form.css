@@ -102,7 +102,18 @@
   color: var(--letraNegra);
   margin: 1rem;
 }
-
+.form-input__box {
+  position: relative;
+}
+.form-input__img {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 16%;
+  left: 0;
+  margin: 0.5rem;
+  object-fit: contain;
+}
 .input-field {
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -114,19 +125,18 @@
 }
 
 #name {
-  background: url("/img/contact-form-name.svg") no-repeat left;
+  /* background: url("/img/contact-form-name.svg") no-repeat left; */
   background-color: #ffffff;
   background-size: 1rem;
-  padding-left: 1.5rem;
-
+  padding-left: 2.1rem;
   margin: 0.5rem 0;
 }
 
 #email {
-  background: url("/img/contact-form-mail.svg") no-repeat left;
+  /* background: url("/img/contact-form-mail.svg") no-repeat left; */
   background-color: #ffffff;
   background-size: 1rem;
-  padding-left: 1.5rem;
+  padding-left: 2.1rem;
 
   margin: 0.5rem 0;
 }
