@@ -1,52 +1,53 @@
-.footer-container{
-    background-color: #0295A9;
-    width: 100vw;
-    height: 650px;
-    box-shadow: var(--boxShadow);
+.footer-container {
+  background-color: #0295a9;
+  width: 100vw;
+  height: 650px;
+  box-shadow: var(--boxShadow);
 }
 .principal-imagen {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.principal-imagen > img{
-    display: flex;
-    padding: 15px;
-    height: 150px;
-    width: 550px;
+.principal-imagen > img {
+  display: flex;
+  padding: 15px;
+  height: 150px;
+  width: 550px;
 }
 /*Imagen*/
 
-.bottom-footer{
-    display: flex;
-    justify-content: space-between;                     /*contenedor secciones derecha-izquierda */
-    padding: 0 100px;       
-}                                               
-
-.right-top-section, .list-elements{
-    display: flex;
-    justify-content: center;                                /*Contenedor seccion superior*/
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    margin-right: 10rem;
+.bottom-footer {
+  display: flex;
+  justify-content: space-between; /*contenedor secciones derecha-izquierda */
+  padding: 0 100px;
 }
 
-.list-horizontal{
-    display: flex;    
-    justify-content: space-between;                 /*class de la lista derecha superior*/
-    margin: 20px;
+.right-top-section,
+.list-elements {
+  display: flex;
+  justify-content: center; /*Contenedor seccion superior*/
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 10rem;
 }
 
-.izq-section{
-    width: 50%;                                         /*Seccion izquierda completa container*/
+.list-horizontal {
+  display: flex;
+  justify-content: space-between; /*class de la lista derecha superior*/
+  margin: 20px;
+}
+
+.izq-section {
+  width: 50%; /*Seccion izquierda completa container*/
 }
 .izq-section p {
-    margin-top: 10px;
-    color: #fff;
-    margin-bottom: 40px;
+  margin-top: 10px;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
-.form-container{
+.form-container {
   display: flex;
   justify-content: space-between;
   max-width: 29rem;
@@ -58,48 +59,52 @@
   font-weight: 400;
 }
 
-.form-container button{
-    display: flex;
-    border: none;
-    padding: 15px 50px;
-    background-color: #fff;
-    justify-content: center;
-    font-weight: 500;
-    border-radius: 100px;
-    color: #000;
+.form-container button {
+  display: flex;
+  border: none;
+  padding: 15px 50px;
+  background-color: #fff;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 100px;
+  color: #000;
 }
-.right-section{                         /*Derecha conteiner completo*/
-    width: 50%;
-}
-
-.right-list{
-    display: flex;
-    flex-direction: row;            /*Lista inferior derecha*/
-    margin-right: 27%;
-    font-size: 20px;
+.right-section {
+  /*Derecha conteiner completo*/
+  width: 50%;
 }
 
+.right-list {
+  display: flex;
+  flex-direction: row; /*Lista inferior derecha*/
+  margin-right: 27%;
+  font-size: 20px;
+}
 
-.bot-section,ul, li{
+/*ERROR EN LA FORMA DE ESTILAR, ESTO ROMPE EL HEADER,
+LEER DOCUMENTACION DE CSS PARA CORRECTA SELECCION DE 
+ELEMENTOS*/
+
+/* .bot-section,ul, li{
     margin-right: 50px;
     justify-content: space-between;
     margin-bottom: 20px;
     font-weight: 400;
-}
-.left-elements{
-    font-size: 20px;                    /*class de lista izquierda*/
+} */
+.left-elements {
+  font-size: 20px; /*class de lista izquierda*/
 }
 
 /**/
 
-.list-horizontal{
-    display: flex;    
-    justify-content: space-between;                 /*class de la lista derecha superior*/
-    margin: 20px;
+.list-horizontal {
+  display: flex;
+  justify-content: space-between; /*class de la lista derecha superior*/
+  margin: 20px;
 }
 
-@media (max-width:720px){
-    .bottom-footer{
-        flex-direction: column;
-    }
+@media (max-width: 720px) {
+  .bottom-footer {
+    flex-direction: column;
+  }
 }
