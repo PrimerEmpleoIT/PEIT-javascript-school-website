@@ -293,12 +293,16 @@
   }
   #img-absolute {
     left: 27%;
-    bottom: -13%;
-    width: 70%;
+    bottom: -16%;
+    width: 75%;
   }
+
   .img-absolute__border {
     border: 4px dashed grey;
     height: auto;
+  }
+  .img-absolute__border img {
+    padding: 0.4rem;
   }
   #service-explanation {
     width: 80%;
@@ -348,15 +352,16 @@
     margin-bottom: 4rem;
   }
   #img-absolute {
-    left: 35%;
-    top: 27%;
+    left: 23%;
+    bottom: -20%;
+    width: 80%;
+  }
+
+  .img-absolute__border img {
+    padding: 0.4rem;
   }
   .img-absolute__border {
     border: 4px dashed grey;
     height: auto;
-  }
-
-  .img-absolute__border img {
-    height: 11rem;
   }
 }
