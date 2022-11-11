@@ -124,24 +124,21 @@
   color: var(--letraNegra);
 }
 
-#name {
+.name {
   /* background: url("/img/contact-form-name.svg") no-repeat left; */
   background-color: #ffffff;
   background-size: 1rem;
   padding-left: 2.1rem;
-  margin: 0.5rem 0;
 }
 
-#email {
+.email {
   /* background: url("/img/contact-form-mail.svg") no-repeat left; */
   background-color: #ffffff;
   background-size: 1rem;
   padding-left: 2.1rem;
-
-  margin: 0.5rem 0;
 }
 
-#message {
+.message {
   resize: none;
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -276,6 +273,7 @@
 .form__label--celulares {
   color: var(--letraNegra);
   font-size: calc(var(--pTamaño) * 0.8);
+  margin: 1rem 0;
 }
 
 .form__button--celulares {
@@ -294,7 +292,6 @@
   font-size: calc(var(--pTamaño) * 0.8);
   cursor: pointer;
   padding: 0.8rem 2rem;
-  margin-top: 1rem;
 }
 
 /*MEDIA QUERIES*/
