@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <title>School Website</title>
+    <title>Kidspark School</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,9 +56,11 @@
         <li><a href="#info-p">Why Us</a></li>
         <li><a href="#about-us">About Us</a></li>
       </ul>
-      <button type="button" class="button-header button-header--celulares">
-        <a href="#form--celulares">Contact Us</a>
-      </button>
+      <div class="button-div">
+        <button type="button" class="button-header button-header--celulares">
+          <a href="#form--celulares">Contact Us</a>
+        </button>
+      </div>
     </div>
 
     <!--SECTION DE HERO-->
@@ -257,6 +260,11 @@
           alt="niño-pulgares_arriba"
           role="img"
         />
+        <div id="img-absolute">
+          <div class="img-absolute__border">
+            <img src="/img/niño-gorro_recibido.svg" alt="" />
+          </div>
+        </div>
       </div>
       <div id="service-explanation">
         <div id="service-title">
@@ -278,11 +286,11 @@
           <p><span id="call-us">Call us :</span> +9112345 67890</p>
         </div>
       </div>
-      <div id="img-absolute">
+      <!-- <div id="img-absolute">
         <div class="img-absolute__border">
           <img src="/img/niño-gorro_recibido.svg" alt="" />
         </div>
-      </div>
+      </div> -->
     </div>
     <!--SECTION OUR TALENTED TEACHERS-->
     <div id="teachers-section" class="teachers-section">
@@ -362,32 +370,48 @@
         </div>
       </div>
       <div class="form__box form__box--form">
-        <form action="" id="contact-form" autocomplete="off">
+        <form action="#" id="contact-form" autocomplete="off">
           <div class="form-label">
             <label for="name">Your Name</label>
-            <input
-              type="text"
-              name="name"
-              class="input-field"
-              id="name"
-              placeholder="Your Name Here"
-              autocomplete="off"
-            />
+            <div class="form-input__box">
+              <img
+                class="form-input__img"
+                src="/img/contact-form-name.svg"
+                alt="name-img.svg"
+              />
+              <input
+                type="text"
+                name="name"
+                class="input-field name"
+                id="name"
+                placeholder="Your Name Here"
+                autocomplete="off"
+              />
+            </div>
           </div>
           <div class="form-label">
             <label for="email">Your Email</label>
-            <input
-              type="email"
-              name="email"
-              class="input-field"
-              id="email"
-              placeholder="Your Email Here"
-              autocomplete="off"
-            />
+            <div class="form-input__box">
+              <img
+                class="form-input__img"
+                src="/img/contact-form-mail.svg"
+                alt="email-img.svg"
+                width="50px"
+              />
+              <input
+                type="email"
+                name="email"
+                class="input-field email"
+                id="email"
+                placeholder="Your Email Here"
+                autocomplete="off"
+              />
+            </div>
           </div>
           <div class="form-label">
             <label for="message">Your Message</label>
             <textarea
+              class="message"
               name="message"
               id="message"
               cols="30"
@@ -454,31 +478,46 @@
         <form action="" id="contact-form--celulares">
           <div class="form__label--celulares">
             <!-- <label for="name">Your Name</label> -->
-            <input
-              type="text"
-              name="name"
-              class="input-field"
-              id="name"
-              placeholder="Your Name Here"
-              required
-            />
+            <div class="form-input__box">
+              <img
+                class="form-input__img"
+                src="img/contact-form-name.svg"
+                alt="name-img.svg"
+              />
+              <input
+                type="text"
+                name="name"
+                class="input-field name"
+                id="name--celulares"
+                placeholder="Your Name Here"
+                required
+              />
+            </div>
           </div>
           <div class="form__label--celulares">
             <!-- <label for="email">Your Email</label> -->
-            <input
-              type="email"
-              name="email"
-              class="input-field"
-              id="email"
-              placeholder="Your Email Here"
-              required
-            />
+            <div class="form-input__box">
+              <img
+                class="form-input__img"
+                src="img/contact-form-mail.svg"
+                alt="email-img.svg"
+              />
+              <input
+                type="email"
+                name="email"
+                class="input-field email"
+                id="email--celulares"
+                placeholder="Your Email Here"
+                required
+              />
+            </div>
           </div>
           <div class="form__label--celulares">
             <!-- <label for="message">Your Message</label> -->
             <textarea
+              class="message"
               name="message"
-              id="message"
+              id="message--celulares"
               cols="30"
               rows="6"
               placeholder="Your Message Here"
@@ -493,6 +532,125 @@
       </div>
     </div>
 
+    <!--FOOTER-SECTION-->
+    <!-- <footer>
+      <div class="footer-container">
+        <div class="kids-park-container">
+          <div class="principal-imagen"> 
+            <img src="img/kids-park-footer.svg" alt="footer-img">
+          </div> 
+        </div>
+        <div class="bottom-footer">
+          <div class="izq-section">
+            <h3>Stay up to date with <br>our story</h3>
+            <p>Join and be the first to get the latest news<br>about trend, promotions, and much more!</p>
+            <form action="">
+              <div class="form-container">
+                <input type="text" style="color:rgba(54, 54, 54, 0.71)" placeholder="Enter your email address" required>
+                <button>Join Now</button>
+              </div>
+            </form>
+          </div>
+          <div class="right-section"> 
+            <div class="right-top-section">
+                  <ul class="list-horizontal">
+                    <li>Home</li>
+                    <li>Programs</li>
+                    <li>Why Us</li>
+                    <li>About Us</li>
+                  </ul>
+              
+              
+              
+            </div>
+            <div class="bot-section list-horizontal" >
+              <div class="left-list">
+                <ul class="left-elements">
+                  
+                    <li>Our Programs</li>
+                  
+                  <li>Preschool</li>
+                  <li>Kindergarden</li>
+                  <li>Pre-K-for All</li>
+                </ul>
+              </div>
+              
+                
+                  <div class="right-list">
+                    <ul>
+                      
+                        <li>Contact Us</li>
+                      
+                      <li>Call Us</li>
+                      <li>Email Us</li>
+                      <li>Our Office</li>
+                    </ul>
+                  </div>
+                
+            </div>
+          </div>
+        </div> -->
+
+    <!-- footer seba -->
+
+    <footer>
+      <div class="container-footer">
+        <div class="title-footer">
+          <img src="./img/kids-park-footer.svg" alt="" />
+        </div>
+        <div class="info-footer">
+          <div class="text-footer">
+            <div class="text-title">
+              <h3>Stay up to date with</h3>
+              <h3>our story</h3>
+            </div>
+            <div class="parrafo">
+              <p>
+                Join and be the first to get the latest news about trend,
+                promotions, and much more!
+              </p>
+            </div>
+            <div class="form-container">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                required
+                class="inp"
+              />
+              <button>Join Now</button>
+            </div>
+          </div>
+          <div class="list-footer">
+            <div class="list-horizontal">
+              <ul class="item-horizontal">
+                <li>Home</li>
+                <li>Programs</li>
+                <li>Why Us</li>
+                <li>About Us</li>
+              </ul>
+            </div>
+            <div class="container-vertical">
+              <div class="vertical-1">
+                <ul class="items-1">
+                  <li class="item-title">Our Programs</li>
+                  <li>Preschool</li>
+                  <li>Kindergarten</li>
+                  <li>Pre-K for All</li>
+                </ul>
+              </div>
+              <div class="vertical-2">
+                <ul class="items-2">
+                  <li class="item-title">Contact Us</li>
+                  <li>Call Us</li>
+                  <li>Email Us</li>
+                  <li>Our Office</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--SCRIPTS-->
 
     <script type="module" src="main.js"></script>

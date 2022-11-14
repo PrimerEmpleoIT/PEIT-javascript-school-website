@@ -12,5 +12,3 @@ function removeClass() {
 botonHamburguesa.addEventListener("click", display);
 
 document.addEventListener("scroll", removeClass);
-
-console.log("hamburguesa funciona");

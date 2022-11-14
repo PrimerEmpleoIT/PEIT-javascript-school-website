@@ -50,9 +50,10 @@
 
 /*Media*/
 
-@media screen and (max-width: 768px) {
-  .img-teachers-container {
+@media screen and (max-width:800px) {
+  .container-teacher__elemento {
+    display: flex;
     flex-direction: column;
-    gap: 1rem;
+    height: 20rem;
   }
 }
