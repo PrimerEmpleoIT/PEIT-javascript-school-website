@@ -102,7 +102,18 @@
   color: var(--letraNegra);
   margin: 1rem;
 }
-
+.form-input__box {
+  position: relative;
+}
+.form-input__img {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 16%;
+  left: 0;
+  margin: 0.5rem;
+  object-fit: contain;
+}
 .input-field {
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -113,25 +124,21 @@
   color: var(--letraNegra);
 }
 
-#name {
-  background: url("/img/contact-form-name.svg") no-repeat left;
+.name {
+  /* background: url("/img/contact-form-name.svg") no-repeat left; */
   background-color: #ffffff;
   background-size: 1rem;
-  padding-left: 1.5rem;
-
-  margin: 0.5rem 0;
+  padding-left: 2.1rem;
 }
 
-#email {
-  background: url("/img/contact-form-mail.svg") no-repeat left;
+.email {
+  /* background: url("/img/contact-form-mail.svg") no-repeat left; */
   background-color: #ffffff;
   background-size: 1rem;
-  padding-left: 1.5rem;
-
-  margin: 0.5rem 0;
+  padding-left: 2.1rem;
 }
 
-#message {
+.message {
   resize: none;
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -266,6 +273,7 @@
 .form__label--celulares {
   color: var(--letraNegra);
   font-size: calc(var(--pTamaño) * 0.8);
+  margin: 1rem 0;
 }
 
 .form__button--celulares {
@@ -284,7 +292,6 @@
   font-size: calc(var(--pTamaño) * 0.8);
   cursor: pointer;
   padding: 0.8rem 2rem;
-  margin-top: 1rem;
 }
 
 /*MEDIA QUERIES*/

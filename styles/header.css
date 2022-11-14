@@ -88,21 +88,27 @@
 .header-list--celulares {
   display: none;
   position: absolute;
-  top: 0;
-  right: -110%;
+  top: 5rem;
+  left: -110%;
   background-color: var(--azulMedio);
   border-radius: 0.5rem;
   padding: 1rem;
-  display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
+  width: 13rem;
+}
+
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*CLASE PARA TRAER EL MENU*/
 .active {
   display: none;
-  right: 0;
+  left: 0;
 }
 
 .list-items--celulares {
@@ -111,7 +117,8 @@
 .list-items--celulares li {
   font-size: var(--pTamaño);
   margin-bottom: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+  color: var(--letraNegra);
 }
 
 /*MEDIA QUERIES*/
@@ -199,45 +206,3 @@
     width: 15rem;
   }
 }
-
-/* @media (max-width: 1100px) {
-  .header-container {
-    padding: 5px;
-  }
-  .menu-toggle {
-    display: flex;
-  }
-  .img-container {
-    display: flex;
-    gap: 15px;
-  }
-  .header-list {
-    display: none;
-  }
-  .fa-bars {
-    display: flex;
-    font-size: 2rem;
-  }
-  .button-header {
-    padding: 5px 15px;
-  }
-}
-@media (max-width: 690px) {
-  .img-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .img-container img {
-    width: 12rem;
-  }
-}
-
-@media (max-width: 470px) {
-  .button-header {
-    padding: 5px 10px;
-  }
-  .img-container img {
-    width: 8rem;
-  }
-} */
