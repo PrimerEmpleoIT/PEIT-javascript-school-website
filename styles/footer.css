@@ -120,23 +120,13 @@ ELEMENTOS*/
 }
 
 
-/*@media (min-width: 320px) and (max-width:1094px)
+@media (min-width: 320px) and (max-width:1094px)
 {
   .principal-imagen > img{
     width: 80%; 
   }
 }
 
-@media (max-width: 1140px){
-  .form-container {
-    position: absolute;} 
-  }
-
-@media (max-width: 1260px){
-  .right-list{
-    margin-left: 0%;
-  }
-}
 @media (max-width: 720px) {
   .bottom-footer {
     flex-direction: column;
