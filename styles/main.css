@@ -37,6 +37,7 @@ h3,
 p {
   text-shadow: var(--textShadow);
   color: var(--letraNegra);
+  margin-bottom: 0;
 }
 
 h1 {

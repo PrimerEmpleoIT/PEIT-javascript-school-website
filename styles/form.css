@@ -92,10 +92,56 @@
 /*DIV FORM*/
 
 .form__box--form {
+  position: relative;
   background-color: #fbfbfb;
   box-shadow: var(--boxShadow);
   border-radius: 1rem;
   padding: 1rem 4rem;
+}
+
+.toast-message {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  right: 0;
+  bottom: 15%;
+  display: flex;
+  background-color: var(--azulMedio);
+  box-shadow: var(--boxShadow);
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  opacity: 0;
+  -webkit-transition: opacity 1s 0s ease;
+  -moz-transition: opacity 1s 0s ease;
+  -o-transition: opacity 1s 0s ease;
+  transition: opacity 1s 0s ease;
+}
+
+.toast-message-active {
+  visibility: visible;
+  opacity: 0.95;
+}
+.toast-message p {
+  align-self: center;
+  margin: auto;
+  padding-left: 1rem;
+
+  line-height: calc(var(--pLineHeigth) * 0.8);
+  color: white;
+}
+
+.toast-message .close-btn {
+  align-self: flex-start;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: black;
 }
 
 .form-label label {
@@ -261,6 +307,7 @@
 /*DIVISON DE FORM-CELULARES*/
 
 .form__box--celulares--form {
+  position: relative;
   background-color: #fbfbfb;
   box-shadow: var(--boxShadow);
   border-radius: 1rem;
@@ -295,7 +342,16 @@
 }
 
 /*MEDIA QUERIES*/
+@media screen and (min-width: 889px) and (max-width: 1024px) {
+  .toast-message p {
+    font-size: calc(var(--pTamaño) * 0.8);
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 888px) {
+  .toast-message p {
+    font-size: calc(var(--pTamaño) * 0.75);
+  }
   .form__box--form {
     padding: 1rem 2rem;
   }
@@ -308,6 +364,16 @@
   #form--celulares {
     display: flex;
     align-items: center;
+  }
+  .toast-message--celulares {
+    bottom: 20%;
+  }
+  .toast-message p {
+    font-size: calc(var(--pTamaño) * 0.75);
+    line-height: calc(var(--pLineHeigth) * 0.75);
+  }
+  .toast-message .close-btn {
+    padding-top: 0.5rem;
   }
 }
 
@@ -355,11 +421,28 @@
     padding: 1rem;
     width: 80%;
   }
+  .toast-message--celulares {
+    bottom: 20%;
+  }
+  .toast-message p {
+    font-size: calc(var(--pTamaño) * 0.75);
+    line-height: calc(var(--pLineHeigth) * 0.75);
+  }
+  .toast-message .close-btn {
+    padding-top: 0.5rem;
+  }
 
   #submit--celulares {
     font-size: calc(var(--pTamaño) * 0.6);
     cursor: pointer;
     padding: 0.6rem 1rem;
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .toast-message p {
+    font-size: calc(var(--pTamaño) * 0.6);
+    line-height: calc(var(--pLineHeigth) * 0.6);
   }
 }

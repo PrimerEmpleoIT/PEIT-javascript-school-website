@@ -4,4 +4,4 @@ import "./src/hamburguesa";
 
 import "./src/mapeo";
 
-console.log("estoy");
+console.log("main.js loaded");
