@@ -1,18 +1,19 @@
-KidsPark School Website
-===========================
+# KidsPark School Website
+
 ## Proyecto colaborativo propuesto por el equipo de Primer Empleo IT.
 
 ### Coders:
 
-* Lorenzo Conrado Del Carlo / Github Profile: [Conwa](https://github.com/Conwa)
-* pendiente / Github Profile: [pendiente de link](https://github.com)
-* pendiente / Github Profile: [pendiente de link](https://github.com)
-* pendiente / Github Profile: [pendiente de link](https://github.com)
+- Lorenzo Conrado Del Carlo / Github Profile: [Conwa](https://github.com/Conwa)
+- Sebastían Berti / Github Profile: [sebaberti](https://github.com/sebaberti)
+- Ariel Jacinto / Github Profile: [Arii23](https://github.com/Arii23)
+- María Sofía Genta / Github Profile: [sofiigentea](https://github.com/sofiigenta)
 
-### Dependencias utilizadas: 
-* Vite
-* Just-Validate
-* Bootstrap
+### Dependencias utilizadas:
+
+- Vite
+- Just-Validate
+- Bootstrap
 
 ### Guía de instalación del proyecto local:
 

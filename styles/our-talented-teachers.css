@@ -32,12 +32,6 @@
   text-shadow: var(--textShadow);
 }
 
-.container-teacher__elemento p{
-  color: #000;
-  text-shadow: var(--textShadow);
-  font-weight: 400;
-  margin-bottom: 5px;
-}
 
 
 

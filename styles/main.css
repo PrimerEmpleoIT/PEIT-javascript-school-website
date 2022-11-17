@@ -9,7 +9,6 @@
 @import url(/styles/hero.css);
 @import url(/styles/informacion.css);
 @import url(our-talented-teachers.css);
-
 @import url(footer.css);
 
 * {
@@ -19,7 +18,7 @@
 }
 
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: white;
   font-size: 16px;
   box-sizing: border-box;
@@ -38,6 +37,7 @@ h3,
 p {
   text-shadow: var(--textShadow);
   color: var(--letraNegra);
+  margin-bottom: 0;
 }
 
 h1 {
