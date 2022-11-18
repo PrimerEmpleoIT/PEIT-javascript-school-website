@@ -66,9 +66,16 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  width: 488px;
+  width: 588px;
   height: 480px;
+}
+
+#hero img{
+  box-shadow: var(--boxShadow);
+  width: 214px;
+  height: 220px;
+  margin: 0 1rem;
+  border-radius: 20px;
 }
 
 .item {
