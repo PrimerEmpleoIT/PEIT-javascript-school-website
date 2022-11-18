@@ -1,12 +1,3 @@
-/*
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 15px;
-grid-row-gap: 0px;;*/
-
-
-
 /* section hero */
 .container-hero {
   width: 100%;

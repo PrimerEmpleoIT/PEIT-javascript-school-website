@@ -43,10 +43,9 @@ window.addEventListener('load', () => {
  setInicial(indiceRandom)
 
     setInterval(()=> {
-        cambiarImagenes(indiceRandom)
         segundosRandom = Math.floor((Math.random() * 5000) + 1000)
         indiceRandom = Math.floor(Math.random() * imagenes.length)
-        console.log(segundosRandom)
-       
+        
+        cambiarImagenes(indiceRandom)
     }, segundosRandom)
 })
