@@ -15,8 +15,7 @@
 .text-hero {
   display: flex;
   flex-direction: column;
-  width: 488px;
-  height: 480px;
+  width: 50%;
 }
 
 .texto-hero--mobile {
@@ -145,17 +144,15 @@
 @media (max-width: 1105px) {
   .text-hero {
     justify-content: center;
-    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
   }
 }
 
 @media (max-width: 1042px) {
-  .container-hero {
-    margin-left: 10px;
-  }
   .img-hero {
     margin-top: 2rem;
-    padding: 0 3rem;
   }
   .item {
     width: 12rem;
@@ -166,10 +163,17 @@
 
     font-size: 30px;
   }
+  .texto-hero--desktop {
+    font-size: calc(var(--h1Tamaño) *0.9);
+  }
+  .text-hero p {
+    font-size: calc(var(--pTamaño) *0.9);
+  }
 }
 
 @media (max-width: 921px) {
   .container-hero {
+    gap:35px;
     margin: 0 auto;
     flex-wrap: wrap;
     text-align: center;
@@ -184,6 +188,7 @@
   }
   .texto-hero--mobile {
     display: contents;
+
   }
 }
 
