@@ -15,6 +15,9 @@
 - Just-Validate
 - Bootstrap
 
+### Demo
+https://vercel.com/conwa/peit-javascript-school-website-1er-deploy
+
 ### Guía de instalación del proyecto local:
 
 ```javascript
